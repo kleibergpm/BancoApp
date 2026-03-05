@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web Mi Banco</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Banco</h1>
+        <!--Barra superior-->
+        <nav class="topbar">
+             <div class="logo">
+         <img src="img/Logo.png" width="100" >
+            </div>
+        </nav>
+        <!--Menu de navegacion-->
+        <nav class ="navbar">
+          <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="parati.html">Para ti</a></li>
+          <li><a href="minegocio.html">Mi negocio</a></li>
+          <li><a href="canales.html">Canales</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="contactanos.html">Contactanos</a></li>
+          <li><a href="nosotros.html">nosotros</a></li>
+
+         </ul>
+        </nav>
+    </header>
+
+    <section id="abrir-cuenta">
+    <h2>Abrir una Cuenta</h2>
+    <form>
+        <label>Nombre completo:</label><br>
+        <input type="text" name="nombre"><br><br>
+
+        <label>Tipo de cuenta:</label><br>
+        <select name="tipo_cuenta">
+            <option value="ahorros">Ahorros</option>
+            <option value="corriente">Corriente</option>
+        </select><br><br>
+
+        <button type="submit">Crear cuenta</button>
+    </form>
+</section>
+
+<hr>
+
+<section id="prestamo">
+    <h2>Solicitar un Préstamo</h2>
+    <form>
+        <label>Monto solicitado:</label><br>
+        <input type="number" name="monto"><br><br>
+
+        <label>Plazo (meses):</label><br>
+        <input type="number" name="plazo"><br><br>
+
+        <button type="submit">Enviar solicitud</button>
+    </form>
+</section>
+
+<hr>
+
+<section id="saldo">
+    <h2>Consultar Saldo</h2>
+    <form>
+        <label>Número de cuenta:</label><br>
+        <input type="text" name="numero_cuenta"><br><br>
+
+        <button type="submit">Consultar</button>
+    </form>
+</section>
+
+<hr>
+
+<section id="transferencias">
+    <h2>Transferencias</h2>
+    <form>
+        <label>Cuenta destino:</label><br>
+        <input type="text" name="destino"><br><br>
+
+        <label>Monto:</label><br>
+        <input type="number" name="monto_transferencia"><br><br>
+
+        <button type="submit">Transferir</button>
+    </form>
+</section>
+
+<hr>
+
+
+<section id="atencion">
+    <h2>Atención al Cliente</h2>
+    <form>
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre_cliente"><br><br>
+
+        <label>Mensaje:</label><br>
+        <textarea name="mensaje"></textarea><br><br>
+
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</section>
+
+<footer>
+<p>&copy; 2026 Mi Banco. Todos los derechos reservados.</p>
+
+<p>
+        <a href="#">Términos</a> | 
+        <a href="#">Privacidad</a> | 
+        <a href="#contactanos">Contáctanos</a>
+    </p>
+</footer>
+
+</body>
+</html>

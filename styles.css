@@ -1,0 +1,490 @@
+/* colores primarios */
+
+:root{
+    --color-fondo:#ffffff;
+    --color-primario:#ff8c42;
+    --color-hover:#ffa366;
+    --color-texto:#333;
+    --color-gris:#f5f5f5;
+    --color-borde:#e0e0e0;
+    --color-secundario:#f9f9f9;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#abrir-cuenta h2,
+#prestamo h2,
+#saldo h2,
+#transferencias h2,
+#atencion h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body{
+    background:var(--color-fondo);
+}
+
+
+header{
+    background: var(--color-fondo);
+    border-bottom: 1px solid var(--color-borde);
+}
+
+header h1{
+    text-align:center;
+    padding:10px;
+    color:var(--color-primario);
+}
+
+
+/* BARRA SUPERIOR */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    background:var(--color-gris);
+}
+
+.logo img{
+    object-fit:contain;
+}
+
+
+/* BUSCADOR */
+
+.search-form{
+    display:flex;
+    gap:5px;
+}
+
+.search-form input{
+    padding:7px;
+    border:1px solid var(--color-borde);
+    border-radius:4px;
+}
+
+.search-form button{
+    padding:7px 12px;
+    border:none;
+    background:var(--color-primario);
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.search-form button:hover{
+    background:var(--color-hover);
+}
+
+
+/* MENU PRINCIPAL */
+
+.navbar{
+    background:var(--color-primario);
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+.navbar a{
+    display:block;
+    padding:12px 20px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    background:var(--color-hover);
+}
+
+
+/* SECCION MI NEGOCIO */
+
+.minegocio{
+    background: var(--color-fondo);
+    padding:60px 10%;
+}
+
+.negocio-card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:60px;
+    gap:40px;
+}
+
+.negocio-card.reverse{
+    flex-direction:row-reverse;
+}
+
+.negocio-texto{
+    flex:1;
+}
+
+.negocio-texto h2{
+    color:var(--color-primario);
+    margin-bottom:10px;
+}
+
+.negocio-texto p{
+    color:var(--color-texto);
+    margin-bottom:20px;
+}
+
+.negocio-img{
+    flex:1;
+}
+
+.negocio-img img{
+    width:100%;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* BOTONES */
+
+.btn-info{
+    display:inline-block;
+    padding:10px 18px;
+    background:var(--color-primario);
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn-info:hover{
+    background:var(--color-hover);
+}
+
+
+/* SECCION CANALES */
+
+.canales-section{
+    background: var(--color-secundario);
+    padding:60px 10%;
+}
+
+.titulo-canales{
+    text-align:center;
+    color:var(--color-primario);
+    margin-bottom:40px;
+}
+
+.contenedor-canales{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:25px;
+}
+
+.canal-card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:8px;
+    border:1px solid var(--color-borde);
+    transition:0.3s;
+}
+
+.canal-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.icono{
+    width:50px;
+    margin-bottom:15px;
+}
+
+.canal-card h3{
+    color:var(--color-primario);
+    margin-bottom:8px;
+}
+
+.canal-card p{
+    color:var(--color-texto);
+}
+
+
+/* SECCION CONTACTO */
+
+.contacto{
+    background: var(--color-fondo);
+    padding:60px 10%;
+    text-align:center;
+}
+
+.contacto h2{
+    color:var(--color-primario);
+    margin-bottom:40px;
+    font-size:28px;
+}
+
+.info-contacto{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    border:1px solid var(--color-borde);
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.info-contacto p{
+    margin:15px 0;
+    font-size:16px;
+    color:var(--color-texto);
+}
+
+.info-contacto a{
+    color:var(--color-primario);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.info-contacto a:hover{
+    color:var(--color-hover);
+}
+
+
+/* FOOTER */
+
+footer{
+    background: var(--color-primario);
+    color:white;
+    text-align:center;
+    padding:30px 10%;
+    margin-top:40px;
+}
+
+footer p{
+    margin:5px 0;
+    font-size:14px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+footer::before{
+    content:"";
+    display:block;
+    height:4px;
+    background:var(--color-hover);
+    margin-bottom:20px;
+}
+
+
+/* SECCIONES DE FORMULARIOS */
+
+#abrir-cuenta,
+#prestamo,
+#saldo,
+#transferencias,
+#atencion{
+    background: var(--color-fondo);
+    padding:50px 10%;
+}
+
+#abrir-cuenta h2,
+#prestamo h2,
+#saldo h2,
+#transferencias h2,
+#atencion h2{
+    color: var(--color-primario);
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    border:1px solid var(--color-borde);
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+form label{
+    font-weight:bold;
+    color:var(--color-texto);
+}
+
+form input,
+form select,
+form textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border:1px solid var(--color-borde);
+    border-radius:4px;
+    font-size:14px;
+}
+
+form textarea{
+    min-height:90px;
+    resize:vertical;
+}
+
+form button{
+    margin-top:15px;
+    padding:10px 18px;
+    border:none;
+    background:var(--color-primario);
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+form button:hover{
+    background:var(--color-hover);
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:var(--color-borde);
+    margin:40px 10%;
+}
+
+
+/* SECCION PROMOCIONES */
+
+.promociones-section{
+    background: var(--color-secundario);
+    padding:60px 10%;
+}
+
+.titulo-promociones{
+    text-align:center;
+    color:var(--color-primario);
+    font-size:30px;
+    margin-bottom:40px;
+}
+
+.contenedor-promociones{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    border-radius:10px;
+    border:1px solid var(--color-borde);
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+.card .header{
+    background:var(--color-primario);
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.card .content{
+    padding:20px;
+}
+
+.item{
+    margin-bottom:10px;
+    color:var(--color-texto);
+    font-size:15px;
+}
+
+.icon{
+    margin-right:6px;
+}
+
+.condicion{
+    margin-top:15px;
+    padding:10px;
+    background:var(--color-secundario);
+    border-radius:5px;
+    font-size:14px;
+}
+
+.timer{
+    background:#fafafa;
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+    border-top:1px solid var(--color-borde);
+}
+
+
+/* SECCION SOBRE NOSOTROS */
+
+.sobre-nosotros{
+    background: var(--color-secundario);
+    padding:60px 10%;
+}
+
+.sobre-nosotros h2{
+    text-align:center;
+    color:var(--color-primario);
+    margin-bottom:40px;
+    font-size:30px;
+}
+
+.sobre-contenido{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.sobre-texto{
+    flex:1;
+}
+
+.sobre-texto p{
+    color:var(--color-texto);
+    margin-bottom:15px;
+    line-height:1.6;
+    font-size:16px;
+}
+
+.sobre-img{
+    flex:1;
+}
+
+.sobre-img img{
+    width:100%;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
